@@ -221,25 +221,26 @@ $primary: #ccff00;
   }
 
   #about {
-    padding-top: 100px;
 
+    padding-top: 100px;
+    width: 100%;
     background-color: $backgroundColor;
 
     .about-wrapper {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
-      margin: 0 auto;
+      width: 100%;
 
       #right-about {
-        flex: 50%;
+
 
         #about-title {
           @include header-title;
         }
 
-        #text-about {
+        #about-list {
           padding: 50px;
           font-size: 1rem;
           line-height: 30px;
@@ -252,13 +253,11 @@ $primary: #ccff00;
         }
       }
 
-      #img-about-wrapper {
-        flex: 50%;
 
-        #img-about {
-          width: 80%;
-        }
+      #img-about {
+        width: 300px;
       }
+
     }
 
   }

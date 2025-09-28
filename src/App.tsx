@@ -121,22 +121,22 @@ function App() {
           </div>
         </section>
 
-        <section id="about" className="section">
-          <div className="about-wrapper">
-            <div id="right-about">
-              <h1 id="about-title">About me</h1>
-              <ul id="about-list">
-                <li>🎓 IT student focused on building user-friendly websites and applications</li>
-                <li>💡 Passionate about solving real-world problems with meaningful projects</li>
-                <li>🔧 Always learning and exploring new technologies</li>
-                <li>🤝 Enjoy collaborating — teamwork drives innovation and growth</li>
-                <li>🥋 Active lifestyle through fitness and martial arts</li>
-                <li>🌍 Love traveling and discovering new cultures</li>
-              </ul>
-            </div>
-            <div id="img-about-wrapper">
-              <img id="img-about" src={coding} alt="coding" />
-            </div></div>
+        <section id="about" className="section"><div className="about-wrapper">
+          <div id="right-about">
+
+            <h1 id="about-title">About me</h1>
+            <ul id="about-list">
+              <li>🎓 IT student focused on building user-friendly websites and applications</li>
+              <li>💡 Passionate about solving real-world problems with meaningful projects</li>
+              <li>🔧 Always learning and exploring new technologies</li>
+              <li>🤝 Enjoy collaborating — teamwork drives innovation and growth</li>
+              <li>🥋 Active lifestyle through fitness and martial arts</li>
+              <li>🌍 Love traveling and discovering new cultures</li>
+            </ul>
+          </div>
+
+          <img id="img-about" src={coding} alt="coding" />
+        </div>
         </section>
 
         <section id="education" className="section">

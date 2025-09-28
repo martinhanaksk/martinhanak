@@ -102,7 +102,7 @@ function App() {
               </li>
               <li>
                 <Link to="contact" smooth={true} duration={100} offset={70}>
-                  <i className="fa fa-solid fa-phone"></i>Contact
+                  <i className="fa fa-solid fa-phone"></i>KKKontact
                 </Link>
               </li>
             </ul>

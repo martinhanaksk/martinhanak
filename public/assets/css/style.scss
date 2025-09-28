@@ -222,13 +222,14 @@ $primary: #ccff00;
 
   #about {
     padding-top: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
     background-color: $backgroundColor;
 
     .about-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       margin: 0 auto;
 
       #right-about {

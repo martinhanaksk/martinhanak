@@ -1,6 +1,6 @@
 import React from "react";
 import me from "../../public/assets/img/me.png";
-import useTypewriter from "../use_typewriter";
+import useTypewriter from "../UseTypewriter";
 
 const INTRO_LINES = ["Hi!,", "I am Martin Hanák,", "Web developer."];
 

@@ -1,6 +1,6 @@
 import React from "react";
 import contact from "../../public/assets/img/contact.svg";
-import useEmailForm from "../use_email_form";
+import useEmailForm from "../UseEmailForm";
 
 const Contact: React.FC = () => {
   const { formRef, handleSubmit } = useEmailForm();

@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./Navbar.tsx";
-import Introduction from "./Introduction.tsx";
-import About from "./About.tsx";
-import Education from "./Education.tsx";
-import Skills from "./Skills.tsx";
-import Projects from "./Projects.tsx";
-import Contact from "./Contact.tsx";
+import Navbar from "./Navbar";
+import Introduction from "./Introduction";
+import About from "./About";
+import Education from "./Education";
+import Skills from "./Skills";
+import Projects from "./Projects";
+import Contact from "./Contact";
 import "../assets/css/style.scss";
 
 const App: React.FC = () => {

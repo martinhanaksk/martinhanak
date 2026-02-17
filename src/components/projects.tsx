@@ -1,5 +1,6 @@
 import React from "react";
 import projectds from "../../public/assets/img/project-ds.png";
+import projectsudoku from "../../public/assets/img/projectsudoku.png";
 import projectlibrary from "../../public/assets/img/project-library.png";
 
 interface Project {
@@ -26,6 +27,14 @@ const PROJECTS: Project[] = [
     title: "Library App",
     description:
       "Mobile application for managing and borrowing books from a library, with user authentication and search features.",
+  },
+  {
+    href: "https://github.com/martinhanaksk/itu-m-m",
+    imgSrc: projectsudoku,
+    imgAlt: "Sudoku project",
+    title: "M&M games",
+    description:
+      "Modern web app for playing sudoku.",
   },
 ];
 

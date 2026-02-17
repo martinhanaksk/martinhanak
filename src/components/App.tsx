@@ -6,7 +6,7 @@ import Education from "./Education";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import "../assets/css/style.scss";
+import "../assets/style.scss";
 
 const App: React.FC = () => {
   return (

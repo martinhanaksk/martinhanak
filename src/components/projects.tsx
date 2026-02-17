@@ -46,7 +46,9 @@ const Projects: React.FC = () => (
           </div>
         </a>
       ))}
-    </div>
+    </div><p className="work-school-note">
+      ...and many more — I've built a variety of projects throughout my studies at highschool and university
+    </p>
   </section>
 );
 

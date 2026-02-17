@@ -1,10 +1,10 @@
 // ─── Variables ───────────────────────────────────────────────────────────────
 
-$bg:      #1a1a1a;
-$bg-nav:  #151515;
+$bg: #1a1a1a;
+$bg-nav: #151515;
 $primary: #ccff00;
-$white:   #ffffff;
-$gray:    #414141;
+$white: #ffffff;
+$gray: #414141;
 
 // ─── Breakpoints ─────────────────────────────────────────────────────────────
 
@@ -51,8 +51,13 @@ $bp-sm: 768px;
 // ─── Keyframes ───────────────────────────────────────────────────────────────
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 // ─── Reset ───────────────────────────────────────────────────────────────────
@@ -70,12 +75,23 @@ html {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
   list-style: none;
 }
 
@@ -86,8 +102,13 @@ img {
 
 // ─── Utilities ───────────────────────────────────────────────────────────────
 
-.bold         { font-weight: 900 !important; }
-.endora-panel { display: none !important; }
+.bold {
+  font-weight: 900 !important;
+}
+
+.endora-panel {
+  display: none !important;
+}
 
 // ─── Navbar ──────────────────────────────────────────────────────────────────
 
@@ -113,11 +134,18 @@ img {
       font-size: 1.2rem;
       padding: 0.7rem;
 
-      &:hover { font-weight: bolder; }
+      &:hover {
+        font-weight: bolder;
+      }
     }
 
-    .checkbox       { display: none; }
-    .hamburger-lines { display: none; }
+    .checkbox {
+      display: none;
+    }
+
+    .hamburger-lines {
+      display: none;
+    }
   }
 
   .menu-items {
@@ -137,7 +165,9 @@ img {
       font-weight: 500;
       color: $white;
 
-      i { padding-right: 10px; }
+      i {
+        padding-right: 10px;
+      }
     }
   }
 
@@ -178,7 +208,11 @@ img {
             transform-origin: 0% 0%;
             transition: transform 0.4s ease-in-out;
           }
-          &.line2 { transition: transform 0.2s ease-in-out; }
+
+          &.line2 {
+            transition: transform 0.2s ease-in-out;
+          }
+
           &.line3 {
             transform-origin: 0% 100%;
             transition: transform 0.4s ease-in-out;
@@ -194,10 +228,21 @@ img {
       transform: translateX(-100%);
     }
 
-    input[type="checkbox"]:checked ~ .menu-items    { transform: translateX(0); }
-    input[type="checkbox"]:checked ~ .hamburger-lines .line1 { transform: rotate(45deg); }
-    input[type="checkbox"]:checked ~ .hamburger-lines .line2 { transform: scaleY(0); }
-    input[type="checkbox"]:checked ~ .hamburger-lines .line3 { transform: rotate(-45deg); }
+    input[type="checkbox"]:checked~.menu-items {
+      transform: translateX(0);
+    }
+
+    input[type="checkbox"]:checked~.hamburger-lines .line1 {
+      transform: rotate(45deg);
+    }
+
+    input[type="checkbox"]:checked~.hamburger-lines .line2 {
+      transform: scaleY(0);
+    }
+
+    input[type="checkbox"]:checked~.hamburger-lines .line3 {
+      transform: rotate(-45deg);
+    }
   }
 }
 
@@ -209,7 +254,9 @@ img {
   font-family: "Roboto", sans-serif;
   line-height: 2em;
 
-  .section { height: 100vh; }
+  .section {
+    height: 100vh;
+  }
 
   // ── Introduction ───────────────────────────────────────────────────────────
 
@@ -284,7 +331,9 @@ img {
   #about {
     padding-top: 100px;
 
-    #about-title { @include header-title; }
+    #about-title {
+      @include header-title;
+    }
 
     .about-wrapper {
       display: flex;
@@ -305,7 +354,9 @@ img {
       margin: 0 auto;
     }
 
-    #img-about { width: 300px; }
+    #img-about {
+      width: 300px;
+    }
 
     @include respond-to($bp-md) {
       display: flex;
@@ -316,10 +367,22 @@ img {
     }
 
     @include respond-to($bp-sm) {
+      .about-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      #img-about {
+        width: 200px;
+        margin-top: 20px;
+      }
+
       #about-list {
         font-size: 1.3rem;
         line-height: 1.8rem;
         padding: 20px;
+        text-align: left;
 
         li {
           display: flex;
@@ -337,7 +400,9 @@ img {
     padding-top: 100px;
     text-align: center;
 
-    #education-title { @include header-title; }
+    #education-title {
+      @include header-title;
+    }
 
     .education-wrapper {
       display: flex;
@@ -350,7 +415,9 @@ img {
       flex-direction: column;
       padding: 10px 20px;
 
-      .institution-img { height: 100px; }
+      .institution-img {
+        height: 100px;
+      }
 
       .institution-name {
         @include text;
@@ -378,10 +445,15 @@ img {
       .school-info {
         .link-to-school {
           order: 4;
-          .institution-img { height: 50px; }
+
+          .institution-img {
+            height: 50px;
+          }
         }
 
-        .institution-name { font-size: 1.2rem; }
+        .institution-name {
+          font-size: 1.2rem;
+        }
 
         .field-of-study {
           font-size: 1rem;
@@ -397,7 +469,9 @@ img {
     padding-top: 100px;
     text-align: center;
 
-    #skills-title { @include header-title; }
+    #skills-title {
+      @include header-title;
+    }
 
     #skills-wrapper {
       display: flex;
@@ -430,11 +504,20 @@ img {
             font-size: 1.5rem;
             font-weight: bold;
 
-            &.dots { margin: 0 auto; }
+            &.dots {
+              margin: 0 auto;
+            }
           }
 
-          .skill-img         { width: 50px; padding: 10px; }
-          .skill-img-special { width: 50px; padding: 10px; }
+          .skill-img {
+            width: 50px;
+            padding: 10px;
+          }
+
+          .skill-img-special {
+            width: 50px;
+            padding: 10px;
+          }
         }
       }
     }
@@ -454,7 +537,9 @@ img {
             padding-left: 5px;
           }
 
-          .skill-item .language-name { font-size: 1rem; }
+          .skill-item .language-name {
+            font-size: 1rem;
+          }
         }
       }
 
@@ -473,7 +558,9 @@ img {
     height: auto;
     text-align: center;
 
-    #work-title { @include header-title; }
+    #work-title {
+      @include header-title;
+    }
 
     .work-projects {
       display: flex;
@@ -510,7 +597,9 @@ img {
             height: 200px;
             overflow-y: auto;
 
-            img { object-fit: contain; }
+            img {
+              object-fit: contain;
+            }
           }
 
           .content-project-item {
@@ -534,6 +623,15 @@ img {
       }
     }
 
+    .work-school-note {
+      @include text;
+      color: rgba($white, 0.5);
+      font-size: 1rem;
+      font-style: italic;
+      margin: 30px auto 0;
+      padding-bottom: 40px;
+    }
+
     @include respond-to($bp-md) {
       .work-projects {
         flex-direction: column;
@@ -545,7 +643,9 @@ img {
           flex-basis: auto;
           width: 100%;
 
-          .content-project-item { height: 250px; }
+          .content-project-item {
+            height: 250px;
+          }
         }
       }
     }
@@ -558,7 +658,9 @@ img {
     height: auto;
     text-align: center;
 
-    #contact-title { @include header-title; }
+    #contact-title {
+      @include header-title;
+    }
 
     .form {
       display: flex;
@@ -569,9 +671,14 @@ img {
       margin: 0 auto;
 
       #form-name,
-      #form-email    { @include form-field; }
+      #form-email {
+        @include form-field;
+      }
 
-      #form-message  { @include form-field; height: 150px; }
+      #form-message {
+        @include form-field;
+        height: 150px;
+      }
 
       #button-wrapper {
         display: flex;
@@ -592,15 +699,20 @@ img {
 
     @include respond-to($bp-sm) {
       .form {
+
         #form-name,
         #form-email,
-        #form-message { width: 90%; }
+        #form-message {
+          width: 90%;
+        }
 
         #button-wrapper {
           justify-content: center;
           width: 100%;
 
-          #form-submit { width: 90%; }
+          #form-submit {
+            width: 90%;
+          }
         }
       }
     }
@@ -612,12 +724,17 @@ img {
     margin-top: 70px;
     height: 200px;
 
-    @include respond-to($bp-sm) { height: 150px; }
+    @include respond-to($bp-sm) {
+      height: 150px;
+    }
   }
 
   // ── Mobile section height override ────────────────────────────────────────
 
   @include respond-to($bp-sm) {
-    .section { min-height: 10vh; height: auto; }
+    .section {
+      min-height: 10vh;
+      height: auto;
+    }
   }
 }
